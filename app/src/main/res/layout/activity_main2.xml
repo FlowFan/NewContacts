@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity2">
+
+
+    <TextView
+        android:id="@+id/tv_phoneHint"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="18dp"
+        android:layout_marginTop="20dp"
+        android:text="用户名:"
+        android:textSize="20sp" />
+
+    <EditText
+        android:id="@+id/et_name"
+        style="@style/edtTxtStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_toRightOf="@+id/tv_phoneHint"
+        android:ems="10"
+        android:inputType="text" />
+
+    <View
+        android:id="@+id/view_wire4"
+        style="@style/View_wire"
+        android:layout_below="@+id/tv_phoneHint"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="10dp" />
+
+
+    <TextView
+        android:id="@+id/tv_firmHint"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/view_wire4"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="18dp"
+        android:layout_marginTop="20dp"
+        android:text="密    码:"
+        android:textSize="20sp" />
+
+    <EditText
+        android:id="@+id/et_phone"
+        style="@style/edtTxtStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/view_wire4"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_toRightOf="@id/tv_firmHint"
+        android:ems="10"
+        android:inputType="textPassword" />
+
+    <View
+        android:id="@+id/view_wire5"
+        style="@style/View_wire"
+        android:layout_below="@+id/tv_firmHint"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="10dp" />
+
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/view_wire5"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:onClick="complete"
+        android:text="完成"
+        android:textSize="18dp" />
+
+</RelativeLayout>
